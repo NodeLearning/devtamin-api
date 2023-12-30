@@ -30,11 +30,9 @@ app.get("/product", async(req,res)=> {
     }
 })
 
-app.get("/product/:id", async(req,res)=> {
+app.get("/product:id", async(req,res)=> {
     try {
-        const {id} = req.params ;
-        const product = await Product.findById(id);
-        res.status(200).json(product);
+        con
     } catch (error) {
         console.log(error.message);
         res.status(400).json({ message: error.message });

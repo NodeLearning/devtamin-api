@@ -30,7 +30,7 @@ app.get("/product", async(req,res)=> {
     }
 })
 
-app.get("/product/:id", async(req,res)=> {
+app.get("/product:id", async(req,res)=> {
     try {
         const {id} = req.params ;
         const product = await Product.findById(id);
