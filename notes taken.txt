@@ -1,0 +1,14 @@
+# create package.json
+npm init -y
+
+# run a .js file
+node filename
+
+# run a .js file using nodeman
+nodeman filename
+
+# To run Scripts
+npm run _script_
+
+# MongoDB password with special caractors
+https://stackoverflow.com/questions/7486623/mongodb-password-with-in-it

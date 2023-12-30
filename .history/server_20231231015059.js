@@ -18,9 +18,5 @@ app.listen(3000, ()=> {
 })
 
 mongoose.connect(
-  "mongodb+srv://MagiSena:Niranjan%4046432@cluster0.p7ynm.mongodb.net/DEVTAMIN?retryWrites=true&w=majority"
-).then(()=> {
-    console.log("connected to MongoDB");
-}).catch((error)=> {
-    console.log(error);
-});
+  "mongodb+srv://MagiSena:@cluster0.p7ynm.mongodb.net/?retryWrites=true&w=majority"
+);
