@@ -12,3 +12,6 @@ npm run _script_
 
 # MongoDB password with special caractors
 https://stackoverflow.com/questions/7486623/mongodb-password-with-in-it
+
+#express-async-handler
+Simple middleware for handling exceptions inside of async express routes and passing them to your express error handlers.
