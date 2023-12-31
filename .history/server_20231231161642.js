@@ -14,10 +14,10 @@ const app = express();
 
 const PORT = process.env.PORT || 3000;
 const MONGO_URL = process.env.MONGO_URL;
-const FRONTEND_URL = process.env.FRONTEND_URL;
+const FRONTEND_URL = process.env.FRONTEND_URL
 
 var corsOptions = {
-  origin: [FRONTEND_URL, 'http://example.com'],
+  origin: [, 'http://example.com'],
   optionsSuccessStatus: 200, // some legacy browsers (IE11, various SmartTVs) choke on 204
 };
 

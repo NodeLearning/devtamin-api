@@ -8,22 +8,14 @@ const productRoute = require("./routes/productRoute");
 
 const errorMiddleware = require('./middleware/errorMiddleware');
 
-const cors = require('cors');
+const cors = require('cors';)
 
 const app = express();
 
 const PORT = process.env.PORT || 3000;
 const MONGO_URL = process.env.MONGO_URL;
-const FRONTEND_URL = process.env.FRONTEND_URL;
-
-var corsOptions = {
-  origin: [FRONTEND_URL, 'http://example.com'],
-  optionsSuccessStatus: 200, // some legacy browsers (IE11, various SmartTVs) choke on 204
-};
 
 //------------------Middlewares-----------
-// handle cors
-app.use(cors());
 // use middleware to handle json
 app.use(express.json());
 // middleware to handle form-data

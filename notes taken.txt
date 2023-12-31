@@ -15,3 +15,9 @@ https://stackoverflow.com/questions/7486623/mongodb-password-with-in-it
 
 #express-async-handler
 Simple middleware for handling exceptions inside of async express routes and passing them to your express error handlers.
+
+#.env
+to use env file,,  need to use npm dotenv package
+
+#allow cors-orgins
+need express cors module
