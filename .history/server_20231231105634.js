@@ -94,8 +94,8 @@ mongoose.connect(
   MONGO_URL
 ).then(()=> {
     // to connect database before connecting to the server
-    app.listen(PORT, () => {
-      console.log(`Node API is running on port ${PORT}`);
+    app.listen(3000, () => {
+      console.log("Node API is running on port 3000");
     });
     // below code run 1st before connecting to the server
     console.log("connected to MongoDB");

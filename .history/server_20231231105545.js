@@ -6,7 +6,7 @@ const mongoose = require("mongoose");
 const Product = require("./models/productModel");
 const app = express();
 
-const PORT = process.env.PORT || 3000;
+const port = process.env.PORT ;
 const MONGO_URL = process.env.MONGO_URL;
 
 // use middleware to handle json
@@ -94,8 +94,8 @@ mongoose.connect(
   MONGO_URL
 ).then(()=> {
     // to connect database before connecting to the server
-    app.listen(PORT, () => {
-      console.log(`Node API is running on port ${PORT}`);
+    app.listen(3000, () => {
+      console.log("Node API is running on port 3000");
     });
     // below code run 1st before connecting to the server
     console.log("connected to MongoDB");
